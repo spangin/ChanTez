@@ -1,6 +1,5 @@
 # ChanTez
 
-
 ## Features
 
 ### User
@@ -22,7 +21,7 @@
 - reactions
   - append reaction
   - enable / disable reaction
-  - set max count reaction for message
+  - set max reaction count for message
 - withdraw
 - show message author
 - get stats (?)
