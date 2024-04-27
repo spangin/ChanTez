@@ -3,28 +3,25 @@
 ## Contract Features
 
 ### Owner
-- [ ] add/remove admin
+- [x] add/remove admin
 - [ ] reactions
   - [ ] append reaction
   - [ ] enable / disable reaction
-  - [ ] set max reaction count for message
 - [ ] withdraw
-- [ ] show message author
-- [ ] set chanel info
+  - [x] withdraw xtz
+  - [ ] withdraw tokens
+- [x] set channel info (image, name, description)
+- [x] set channel configuration (show message author, set max reaction count, appearance)
 - [ ] get stats (?)
-- [ ] set appearance cfg (?)
-  - [ ] set / remove image (?)
-  - [ ] set profile color (?)
-  - [ ] set bg color (?)
 
 ### Admin and Owner
 - [ ] add message
 - [ ] edit message
 
 ### User
-- [ ] subscibe / unsubscibe
+- [ ] subscribe / unsubscribe
 - [ ] react to message
-- [ ] add / remove message to bookmarks (?)
+- [ ] add / remove bookmark (?)
 - [ ] forward / repost (?)
 - [ ] reply (?)
 
@@ -32,12 +29,12 @@
 ## Features
 
 ### User
-- [ ] subscibe / unsubscibe
+- [ ] subscribe / unsubscribe
 - [ ] react to message
 - [ ] donate
 - [ ] copy message
 - [ ] copy link message
-- [ ] add / remove message to bookmarks (?)
+- [ ] add / remove bookmark (?)
 - [ ] forward / repost (?)
 - [ ] reply (?)
 
@@ -54,7 +51,7 @@
 - [ ] withdraw
 - [ ] show message author
 - [ ] get stats (?)
-- [ ] set chanel info
+- [ ] set channel info
 - [ ] change appearance
   - [ ] set / remove image
   - [ ] set profile color (?)
