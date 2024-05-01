@@ -17,7 +17,9 @@ def test():
     scenario = sp.test_scenario()
     scenario.h1("Voting tests")
     voting = Voting(sp.utils.bytes_of_string("What?"),
-                    ["ans21", "ans2", "ans1"],
+                    [sp.utils.bytes_of_string("ans21"),
+                     sp.utils.bytes_of_string("ans2"),
+                     sp.utils.bytes_of_string("ans1")],
                     sp.timestamp(CURRENT_TIME - 60),
                     sp.timestamp(CURRENT_TIME + 60))
     scenario += voting
