@@ -1,6 +1,7 @@
 import time
 import smartpy as sp
 
+
 Voting = sp.io.import_script_from_url("https://raw.githubusercontent.com/spangin/ChanTez/main/contracts/Voting.py").Voting
 
     
@@ -24,11 +25,11 @@ def test():
                     sp.timestamp(CURRENT_TIME + 60))
     scenario += voting
 
-    voting.vote(1).run(sender=userA, now = sp.timestamp(CURRENT_TIME))
-    voting.vote(1).run(sender=userA, amount = sp.tez(1), now = sp.timestamp(CURRENT_TIME), valid = False)
-    voting.vote(1).run(sender=userA, now = sp.timestamp(CURRENT_TIME-61), valid = False)
-    voting.vote(1).run(sender=userA, now = sp.timestamp(CURRENT_TIME+61), valid = False)
-    voting.vote(50).run(sender=userA, valid = False)
-    voting.vote(2).run(sender=userA, valid = False)
-    voting.vote(3).run(sender=userC)
-    voting.vote(1).run(sender=userB)
+    voting.vote(1).run(sender = userA, now = sp.timestamp(CURRENT_TIME))
+    voting.vote(1).run(sender = userA, amount = sp.tez(1), now = sp.timestamp(CURRENT_TIME), valid = False)
+    voting.vote(1).run(sender = userA, now = sp.timestamp(CURRENT_TIME - 61), valid = False)
+    voting.vote(1).run(sender = userA, now = sp.timestamp(CURRENT_TIME + 61), valid = False)
+    voting.vote(9).run(sender = userA, valid = False)
+    voting.vote(2).run(sender = userA, valid = False)
+    voting.vote(3).run(sender = userC)
+    voting.vote(1).run(sender = userB)
